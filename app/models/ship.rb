@@ -1,7 +1,7 @@
 class Ship
   attr_reader :name, :type, :booty
 
-  @@ships = []
+  SHIPS = []
 
   def initialize(args)
     @name = args[:name]
@@ -15,6 +15,6 @@ class Ship
   end
 
   def self.clear
-    @@ships = []
+    SHIPS 
   end
 end
